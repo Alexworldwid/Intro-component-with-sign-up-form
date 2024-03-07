@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Intro component with sign up form</title>
+
+</head>
+<body>
+  <main>
+    <section class="sect1">
+      <div class="heading">
+        <h1>Learn to code by watching others</h1>
+      </div>
+
+      <div class="sub-heading">
+        <p> See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. </p>
+      </div>
+    </section>
+
+    <section class="sect2">
+      <div class="offer">
+        <p><span class="sub-offer">Try it free 7 days</span> then <br> $20/mo. thereafter</p>
+      </div>
+
+      <form action="#" method="get">
+        <div id="f-name" class="input-field">
+          <input type="text" name="firstName" placeholder="First Name" class="input-icon">
+          <p class="error-message">First Name cannot be empty</p>
+          <img src="images/icon-error.svg" alt="error-icon" class="error-icon valid">
+        </div>
+
+        <div id="l-name" class="input-field">
+          <input type="text" name="lastName" placeholder="Last Name">
+          <p class="error-message">Last Name cannot be empty</p>
+          <img src="images/icon-error.svg" alt="error-icon" class="error-icon">
+        </div>
+
+        <div id="mail" class="input-field">
+          <input type="email" name="mail" placeholder="Email Address" required>
+          <p class="error-message">Looks like this is not an email</p>
+          <img src="images/icon-error.svg" alt="error-icon" class="error-icon">
+        </div>
+
+        <div id="password" class="input-field">
+          <input type="password" name="password" placeholder="Password" required>
+          <p class="error-message">Password cannot be empty</p>
+          <img src="images/icon-error.svg" alt="error-icon" class="error-icon ">
+        </div>
+
+        <div id="btn">
+          <input type="button" name="submit" value=" CLAIM YOUR FREE TRIAL" class="button">
+        </div>
+
+        <div class="terms">
+          <p>By clicking the button, you are agreeing to our <span class="t-and-c">Terms and Services</span></p>
+        </div>
+      </form>
+    </section>
+
+    <script src="main.js"></script>
+  </main>
+ 
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      <br>Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+</body>
+</html>
